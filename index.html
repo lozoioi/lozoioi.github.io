@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!--==================== UNICONS 图标====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v3.0.6/css/line.css"
+    />
+    <!--==================== SWIPER CSS ====================-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <!-- iconfont font class 方式引用图标 -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://at.alicdn.com/t/c/font_3900458_82z46p85im.css"
+    /> -->
+
+    <title>Responsive Portfolio Website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header scroll-header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">AINOIN</a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <i class="uil uil-estate nav__icon"></i>
+                <p i18n="home">主页</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>
+                <p i18n="about">关于我</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>
+                <p i18n="skills">技能</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>
+                <p i18n="portfolio">信息</p>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>
+                <p i18n="contact">联系方式</p>
+              </a>
+            </li>
+
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://github.com/lozoioi"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt"></i>
+              </a>
+              <a
+                href="https://space.bilibili.com/592196999"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <!-- <i class="uil uil-dribbble"></i> -->
+                <svg
+                  t="1674801734735"
+                  viewBox="0 0 1024 1024"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  p-id="4124"
+                >
+                  <path
+                    d="M777.514667 131.669333a53.333333 53.333333 0 0 1 0 75.434667L728.746667 255.829333h49.92A160 160 0 0 1 938.666667 415.872v320a160 160 0 0 1-160 160H245.333333A160 160 0 0 1 85.333333 735.872v-320a160 160 0 0 1 160-160h49.749334L246.4 207.146667a53.333333 53.333333 0 1 1 75.392-75.434667l113.152 113.152c3.370667 3.370667 6.186667 7.04 8.448 10.965333h137.088c2.261333-3.925333 5.12-7.68 8.490667-11.008l113.109333-113.152a53.333333 53.333333 0 0 1 75.434667 0z m1.152 231.253334H245.333333a53.333333 53.333333 0 0 0-53.205333 49.365333l-0.128 4.010667v320c0 28.117333 21.76 51.157333 49.365333 53.162666l3.968 0.170667h533.333334a53.333333 53.333333 0 0 0 53.205333-49.365333l0.128-3.968v-320c0-29.44-23.893333-53.333333-53.333333-53.333334z m-426.666667 106.666666c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z m320 0c29.44 0 53.333333 23.893333 53.333333 53.333334v53.333333a53.333333 53.333333 0 1 1-106.666666 0v-53.333333c0-29.44 23.893333-53.333333 53.333333-53.333334z"
+                    fill="hsl(250deg 69% 61%)"
+                    p-id="4125"
+                  ></path>
+                </svg>
+              </a>
+            </div>
+
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <g mask="url(#mask0)">
+                
+                  <image
+                    class="home__blob-img"
+                    x="0"
+                    y="-30"
+                    xlink:href="https://i2.hdslb.com/bfs/face/071a4ca4dffc626fac395628b18a75c91e9e6257.jpg@240w_240h_1c_1s_!web-avatar-space-header.avif"
+                  />
+                </g>
+              </svg>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title" i18n="home__title">
+                你好呀！我是AINOIN(Cilememe)
+              </h1>
+              <h3 class="home__subtitle" i18n="home__subtitle">
+                一个ACG爱好者
+              </h3>
+              <p class="home__description" i18n="home__description">
+                混很多的ip和圈子，具体可以看下面的信息表，拒R18G，拒阴阳怪气，不贴脸开大都可接受。包容性超强！
+              </p>
+              <a href="#contact" class="button button-flex">
+                <span i18n="home__contact">我的联系方式</span>
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt-2 home__scroll-mouse"></i>
+              <span class="home__scroll-name" i18n="home__scroll-name"
+                >请下滑</span
+              >
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <h2 class="section__title" i18n="about__title">关于我</h2>
+        <span class="section__subtitle" i18n="about__subtitle"
+          >简单介绍</span
+        >
+        <div class="about__container container grid">
+          <img src="https://ainabb.oss-cn-shanghai.aliyuncs.com/files/119584588_p0.jpg" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description" i18n="about__description">
+              混很多的ip和圈子，具体可以看下面的信息表，出或收一些谷，食量不大，现居上海松江。
+            </p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">16</span>
+                <span class="about__info-name" i18n="about__info-name1"
+                  >周岁 <br />
+                  目前年龄</span
+                >
+              </div>
+
+              <div>
+                <span class="about__info-title">10/10</span>
+                <span class="about__info-name" i18n="about__info-name2"
+                  >日/月 <br />
+                  我的生日！！</span
+                >
+              </div>
+
+              <div>
+                <span class="about__info-title">2999+</span>
+                <span class="about__info-name" i18n="about__info-name3"
+                  >人民币 <br />
+                  出谷交易金额量</span
+                >
+              </div>
+            </div>
+
+            <div class="about__buttons">
+              <a
+                download=""
+                href="assets/pdf/简历.pdf"
+                class="button button--flex"
+              >
+                <span i18n="download">查看属性详细信息显示</span
+                ><i class="uil uil-download-alt button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== SKILLS ====================-->
+      <section class="skills section" id="skills">
+        <h2 class="section__title" i18n="skills__title">技能？？？</h2>
+        <span class="section__subtitle" i18n="skills__subtitle"
+          >大概一部分</span
+        >
+
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== SKILLS 1 ====================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="uil uil-brackets-curly skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="home__subtitle">
+                    电子技术
+                  </h1>
+                  <span class="skills__subtitle" i18n="skills__years"
+                    >计算机运维或网站开发等</span
+                  >
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">HTML</h3>
+                    <span class="skills__number">60%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__html"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">剪辑</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__css"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">python</h3>
+                    <span class="skills__number">40%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__js"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+
+                  <div class="skills__titles">
+                    <h3 class="skills__name">服务器运维</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__vue"></div>
+                  </div>
+                
+                
+                </div>
+                <div class="skills__data">
+
+
+                  <div class="skills__titles">
+                    <h3 class="skills__name">平面设计</h3>
+                    <span class="skills__number">50%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__sj"></div>
+                  </div>
+                <div class="skills__data">
+                </div>
+              </div>
+            </div>
+            <!--==================== SKILLS 2 ====================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="uil uil-server-network skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title" i18n="skills__title2">
+                    体育与爱好
+                  </h1>
+                  <span class="skills__subtitle" i18n="skills__years2"
+                    >只显示一点点</span
+                  >
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">骑行</h3>
+                    <span class="skills__number">70%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__java"></div>
+                  </div>
+                </div>
+
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">吉他</h3>
+                    <span class="skills__number">10%</span>
+                  </div>
+                  <div class="skills__bar">
+                    <div class="skills__percentage skills__python"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== QUALIFICATION ====================-->
+      <section class="qualification section">
+        <h2 class="section__title" i18n="qualification__title">
+          经历
+        </h2>
+        <span class="section__subtitle" i18n="qualification__subtitle"
+          >活了16年我都干了些啥？</span
+        >
+        <div class="qualification__container container">
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              <span i18n="education">教育经历</span>
+            </div>
+
+            <div class="qualification__button button--flex" data-target="#work">
+              <i class="uil uil-briefcase-alt qualification__icon"></i>
+              <span i18n="work">二次元经历？</span>
+            </div>
+          </div>
+          <div class="qualification__sections">
+            <!--==================== QUALIFICATION CONTENT 1 ====================-->
+            <div
+              class="qualification__content qualification__active"
+              data-content
+              id="education"
+            >
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification1__title">
+                    小学
+                  </h3>
+                  <span
+                    class="qualification__subtitle"
+                    i18n="qualification1__subtitle"
+                    >上海市闵行区**学校</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2016-2020
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 2 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div>
+                  <h3 class="qualification__title" i18n="qualification2__title">
+                    
+                  </h3>
+                  <span
+                    class="qualification__subtitle"
+                    i18n="qualification2__subtitle"
+                    >六年级-上海市松江区西外***</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2020.9
+                  </div>
+                </div>
+              </div>
+              <!--==================== QUALIFICATION 3 ====================-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title" i18n="qualification3__title">
+                    初中
+                  </h3>
+                  <span
+                    class="qualification__subtitle"
+                    i18n="qualification3__subtitle"
+                    >上海市松江区新桥中学</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2021-2024
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+              </div>
+            </div>
+            <!--==================== QUALIFICATION CONTENT 2 ====================-->
+            <div class="qualification__content" data-content id="work">
+              <!--==================== QUALIFICATION 1 ====================-->
+              <div class="qualification__data">
+                <div></div>
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!-- <span class="qualification__line"></span> -->
+                </div>
+                <div>
+                  <h3 class="qualification__title" i18n="qualification4__title">
+                    怎么会有人会写出这种经历？
+                  </h3>
+                  <span
+                    class="qualification__subtitle"
+                    i18n="qualification4__subtitle"
+                    >我也不记得了</span
+                  >
+                  <div class="qualification__calendar">
+                    <i class="uil uil-calendar-alt"></i>
+                    2019年入坑
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PORTFOLIO ====================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title" i18n="portfolio__title">最近的信息</h2>
+        <span class="section__subtitle" i18n="portfolio__subtitle"
+          >就是发发牢骚出出谷</span
+        >
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!--==================== PORTFOLIO 1 ====================-->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img
+                src="https://ainabb.oss-cn-shanghai.aliyuncs.com/files/34116994_p0.jpg"
+                alt=""
+                class="portfolio__img"
+              />
+
+              <div class="portfolio_">
+                <h3 class="portfolio__title" i18n="portfolio1__title">
+                  我喜欢这个画师
+                </h3>
+                <p
+                  class="portfolio__description"
+                  i18n="portfolio1__description"
+                >
+                  就当推荐画师了吧，可以去看看ta的pixiv账号，不知道ta国内有没有社交媒体账号.....
+                </p>
+                <a
+                  href="https://www.pixiv.net/users/15063"
+                  target="_blank"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GO PIXIV(要梯)
+                  <i class="uil uil-arrow-right button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </section>
+
+      <!--==================== CONTACT ME ====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title" i18n="contact__title">联系方式！</h2>
+        <span class="section__subtitle" i18n="contact__subtitle"
+          >欢迎扩列</span
+        >
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-phone-alt contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title" i18n="tel">QQ</h3>
+                <span class="contact__subtitle" i18n="tel__number"
+                  >3261125864</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title" i18n="email">E-mail</h3>
+                <span class="contatc__subtitle" i18n="email__address"
+                  >mail@ainoin.top(这是单项邮箱请务必在邮件里附上你的联系方式)</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title" i18n="location">twitter</h3>
+                <span class="contatc__subtitle" i18n="location__detail"
+                  >@cilcemememe</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">AINOIN</h1>
+            <span class="footer__subtitle" i18n="home__subtitle"
+              >power by Bedimcode</span
+            >
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#skills" class="footer__link" i18n="skills">Skills</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link" i18n="portfolio"
+                >Portfolio</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="footer__link" i18n="contact">Contact</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+
+            <a href="https://github.com/lozoioi" target="_blank">
+              <svg class="icon footer__social" aria-hidden="true">
+                <use xlink:href="#icon-github"></use>
+              </svg>
+            </a>
+            <a href="https://space.bilibili.com/592196999" target="_blank">
+              <svg class="icon footer__social" aria-hidden="true">
+                <use xlink:href="#icon-bilibili-line"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">
+          &#169; 2024年8月17日最近一次修改，网站有问题请至GitHub仓库指出，点
+          <a
+            class="footer__copy"
+            href="https://github.com/lozoioi/ainoin"
+            target="_blank"
+            >这里</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+    <!--==================== SWIPER JS ====================-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!-- iconfont JS -->
+    <script src="assets/js/iconfont.js"></script>
+    <!-- jquery -->
+    <script src="assets/js/jquery2.1.4.min.js"></script>
+    <script src="assets/js/jquery.i18n.min.js"></script>
+    <!--==================== MAIN JS ====================-->
+    <script src="assets/js/main.js"></script>
+
+    <!-- translate JS -->
+    <script src="assets/js/cn-en-translate.js"></script>
+  </body>
+</html>
